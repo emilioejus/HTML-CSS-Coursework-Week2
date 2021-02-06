@@ -16,4 +16,42 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /** Estilos de la cabecera */
+
+ .header {
+    display: flex;
+ }
+ .header > img {
+    padding: 40px 0px 10px 80px;
+    width: 3em;
+    height: 3em;
+ }
+ .header_nav{
+     width: 100%;
+     padding:50px 40px 0px 40%;
+     
+     
+ }
+ .header_nav_ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    
+ }
+ .header_nav_li--active {
+     list-style: none;
+ }
+   
+ .header_nav_li {
+     display: inline;
+     color: #A6A5A5;
+ }
+ .header_nav_li:hover {
+     color: orange;
+     cursor: pointer;
+ }
+
+ /** Estilos de */
+ 
+
 
