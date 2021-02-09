@@ -4,6 +4,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    color: rgb(61, 61, 61);
+    margin: 0px;
 }
 
 /**
@@ -16,19 +18,26 @@ body {
  * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
  */
 
+ /** Estilos Globales */
+
+ .all__h {
+    margin-top: 0px;
+    color: white;  
+}
+
  /** Estilos de la cabecera */
 
  .header {
     display: flex;
  }
  .header > img {
-    padding: 40px 0px 10px 80px;
+    padding: 40px 0px 10px 30em;
     width: 3em;
     height: 3em;
  }
  .header_nav{
      width: 100%;
-     padding:50px 40px 0px 40%;
+     padding:50px 20em 40px 40%;
      
      
  }
@@ -36,22 +45,118 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: right;
+    width: 130%;
     
  }
  .header_nav_li--active {
      list-style: none;
+     font-size: 110%;
  }
    
  .header_nav_li {
      display: inline;
      color: #A6A5A5;
+     font-size: 110%;
  }
  .header_nav_li:hover {
      color: orange;
      cursor: pointer;
  }
 
- /** Estilos de */
+ /** Estilos de main*/
+
+ .main__container {
+     display: flex;
+     background-image: url("../img/first-background.jpg");
+     background-position: right;
+     background-size: cover;
+     height: 40em;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .main__container > a > button{
+     margin-top: 20px;
+     color: white;
+     background-color: #DD6400;
+     border-radius: 5px;
+     width: 8em;
+     height: 3em;
+ }
+ .main__container >a > button:hover {
+    background-color:orange 
+ }
+
+ /** Estilos del section*/
+
+ .section__container {
+     display: inline;
+     width: 100%;
+    
+ }
+ .section__h2 {
+     padding-top: 40px;
+     text-align: center;
+     padding-bottom: 20px;
+ }
+ .section__article {
+     
+     margin: 0px;
+     width: 100%;
+ }
+ .section__article > ul > li {
+    display: inline-block;
+}
+ .section__article > ul  {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 400px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    margin-right: 15em;
+    margin-left: 15em;
+ }
+
+ /** Estilos en footer*/
+
+ .footer__container {
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+ }
+ .footer__h5 {
+     font-size: 100%;
+ }
+ .footer__ul {
+     display: flex;
+    
+     display: inline-block;
+    padding: 0px;
+ }
+ .footer__ul > li > a > img {
+    border-radius: 50%;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20%;
+    margin: 10%;
+ }
+ .footer__li {
+     display:inline-block;
+     border-radius: 50%;
+ }
+ .footer__div > a {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 4em;
+     text-decoration: none;
+     color: black;
+ }
+
+ 
+ 
+
+
+ 
  
 
 
